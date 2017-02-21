@@ -20,11 +20,33 @@ body {
 .wrapper::-webkit-scrollbar {
 	display: none;
 }
+
+.top-nav {
+	height: 150px;
+	width: 100%;
+	background-color: pink;
+	position: fixed;
+
+	background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2014-12/27/11/campaign_images/webdr06/how-ron-swanson-are-you-2-9808-1419697484-19_dblbig.jpg);
+	background-size: contain;
+}
+
+footer {
+	height: 150px;
+	background-color: pink;
+	position: fixed;
+	width: 100%;
+}
+
 section {
 	width: 100vw;
-	height: 100vh;
+	height: 85vh;
 	border: 20px solid lightblue;
 }
+
+
+
+
 @media screen and (max-width: 480px) {
 	.wrapper {
 		display: block;
