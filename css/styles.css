@@ -67,45 +67,9 @@ section h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-/*-- MY CHANGES --*/
-
-
 .top-nav {
 	height: 20vh;
 	width: 100vw;
-<<<<<<< HEAD
-	background-color: #FFF;
-	position: fixed;
-	top: 0;
-	left: 200px;
-
-	z-index: 0;
-
-}
-
-.left-bg {
-	background-image: url('../img/left-side-bg.jpg');
-	height: 100vh;
-	width: 285px;
-
-	top: 0;
-	left: 0;
-	position: absolute;
-	display: inline;
-
-	z-index: 100;
-}
-
-=======
 	position: fixed;
 	top: 0;
 	left: 8%;
@@ -126,43 +90,24 @@ section h2 {
 	z-index: 100;
 }*/
 
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 footer {
 	height: 10vh;
 	background-color: #FFF;
 	width: 100%;
 
-<<<<<<< HEAD
-
-	position: fixed;
-	left: 285px;
-
-=======
 	left: 12%;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 	display: flex;
 	justify-content: flex-start;
 }
 
 section {
-<<<<<<< HEAD
-	width: 100vw;
-	height: 70vh;
-	margin-top: 20vh;
-=======
 	margin-top: 20vh;
 	z-index: 1;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 /*	border: 20px solid lightblue;
 
 	background-color: pink;*/
 }
 
-<<<<<<< HEAD
-/*-- MY CHANGES --*/
-
-=======
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 
 h1 {
 	background-image: url('../img/orb-01-mars.png');
@@ -172,43 +117,23 @@ h1 {
 	background-size: contain;
 
 	position: relative;
-<<<<<<< HEAD
-	top: 10px;
-	left: 50px;
-
-
-=======
 	top: 10%;
 	left: 5%;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 }
 
 h1 img {
 	position: relative;
-<<<<<<< HEAD
-	top: 10px;
-	left: 35px;
-	
-	height: 150px;
-
-=======
 	top: 10%;
 	left: 3%;
 	
 	height: 150px;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 }
 
 h3 {
 	color: #DABC8F;
-<<<<<<< HEAD
-	font-size: 1.1rem;
-	font-weight: 800;
-=======
 	font-size: 1.5rem;
 	font-weight: 800;
 	letter-spacing: 2px;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 }
 
 h3, nav a {
@@ -236,15 +161,9 @@ a {
 }
 
 .lrg-nav ul {
-<<<<<<< HEAD
-	position: relative;
-	top: -150px;
-	left: 300px;
-=======
 	position: absolute;
 	top: 0%;
 	left: 20%;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 
 	z-index: 10;
 }
@@ -261,17 +180,12 @@ a {
 	width: 161px;
 
 	position: relative;
-<<<<<<< HEAD
-	top: -40px;
-=======
 	top: 4%;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 	left: 0;
 
 
 	background-repeat: no-repeat;
 	background-size: contain;
-<<<<<<< HEAD
 }
 
 .lrg-nav li:first-of-type a {
@@ -284,186 +198,6 @@ a {
 	background-image: url('../img/orb-03.png');
 	height: 110px;
 	width: 111px;
-
-	position: relative;
-	top: -150px;
-	left: 180px;
-
-
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.lrg-nav li:nth-of-type(2) a {
-	position: relative;
-	top: 60px;
-	left: 30px;
-}
-
-.lrg-nav li:nth-of-type(3) {
-	background-image: url('../img/orb-04.png');
-	height: 166px;
-	width: 166px;
-
-	position: relative;
-	top: -350px;
-	left: 300px;
-
-
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.lrg-nav li:nth-of-type(3) a {
-	position: relative;
-	top: 120px;
-	left: 60px;
-}
-
-.lrg-nav li:last-of-type {
-	background-image: url('../img/orb-05.png');
-	height: 116px;
-	width: 117px;
-
-	position: relative;
-	top: -450px;
-	left: 440px;
-
-
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.lrg-nav li:nth-of-type(4) a {
-	position: relative;
-	top: 70px;
-	left: 20px;
-}
-
-.lrg-nav li:hover {
-	transition: transform 2s;
-	transform: rotate(270deg);
-}
-
-.sm-nav {
-	display: none;
-}
-
-
-h1, nav li {
-	/*mix-blend-mode: overlay;*/
- 	animation: hue 5s infinite;
-}
-
-@keyframes hue {
-  0% {filter: hue-rotate(0)}
-  100% {filter: hue-rotate(360deg)}
-}
-
-
-.rotate {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 2s;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-     
-    overflow:hidden;
- 
-    }  
- 
-.rotate:hover  {
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-}
-
-.col-1-4 {
-	width: 20%;
-	height: 200px;
-
-	margin-right: 25px;
-}
-
-.col-1-4:first-of-type {
-	padding-left: 50px;
-}
-
-.rule {
-	height: 5px;
-	width: 30px;
-	background-color: black;
-	margin-bottom: 10px;
-}
-
-.fa {
-	padding-right: 10px;
-}
-
-section:first-of-type {
-	margin-left: 300px;
-}
-
-#landing {
-	background-color: #fff;
-	background-image: url('../img/01-m.png');
-	background-repeat: no-repeat;
-	background-position: top 10% right 45%;
-
-	display: flex;
-	align-items: center;
-}
-
-.landing-img {
-	height: 100%;
-	width: 820px;
-}
-
-.section-info {
-	width: 290px;
-	
-	background-color: #fff;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	z-index: 0;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-}
-
-.lrg-nav li:first-of-type a {
-	position: relative;
-	top: 100px;
-	left: 50px;
-}
-
-.lrg-nav li:nth-of-type(2) {
-	background-image: url('../img/orb-03.png');
-	height: 110px;
-	width: 111px;
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 
 	position: relative;
 	top: -150px;
@@ -606,111 +340,15 @@ h1, nav li {
 }
 
 @media screen and (max-width: 480px) {
-
 	.wrapper {
 		display: block;
 		width: 100vw;
 		overflow-x: hidden;
 	}
-
-	.top-nav {
-		height: 1vh;
-		width: 100vw;
-		position: fixed;
-		top: 150px;
-		left: 0;
-
-		z-index: 0;
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.lrg-nav {
-		display: none;
-	}
-
-	.sm-nav {
-		display: block;
-
-	}
-
-	.sm-nav li {
-		display: inline-flex;
-		padding-right: 20px;
-		
-	}
-
-	.left-bg {
-		width: 100vw;
-
-		position: absolute;
-		top: -400px;
-		left: 0;
-
-		-webkit-transform: rotate(15deg) scale(1.25, 0.5);
-	    -moz-transform: rotate(15deg) scale(1.25, 0.5);
-	    -ms-transform: rotate(15deg) scale(1.25, 0.5);
-	    transform: rotate(90deg) scale(.5);
-
-	    background-repeat: no-repeat;
-	    z-index: 0;
-	}
-
-	h1 {
-		height: 166px;
-		height: 162px;
-
-
-		position: relative;
-		top: -40px;
-		left: -35px;
-
-
-	}
-
-	h1 > img {
-		position: relative;
-		top: 10px;
-		left: 0px;
-		
-		height: 100px;
-
-	}
-
 	section {
 		width: 100vw;
 		height: 100vh;
-		background-color: pink;
 	}
-
-	section:first-of-type {
-		margin-left: 0;
-
-
-	}
-
-	#landing {
-		background-position: top 20% right 5%;
-		
-
-		display: flex;
-		margin-top: 10vh;
-		flex-direction: column-reverse;
-		justify-content: center;
-	}
-
-	.section-img01 {
-		height: 10px;
-	}
-<<<<<<< HEAD
-
-	.section-info {
-		height: 200px;
-
-	}
-
-
-=======
 	.lrg-nav {
 		display: none;
 	}
@@ -772,13 +410,4 @@ h1, nav li {
 	}
 
 }
->>>>>>> 86ff89f6711ed441e705eba590ecf8c9333362fc
 }
-
-
-
-
-
-
-
-
