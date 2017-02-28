@@ -2,29 +2,6 @@ html * {
   padding: 0;
   margin: 0;
 }
-
-}
-section h2 {
-	font-size: 72px;
-	color: lightblue;
-	text-transform: uppercase;
-}
-#m {
-	font-size: 72px;
-	color: lightblue;
-	text-transform: uppercase;
-}
-h3 {
-	font-size: 24px;
-	color: gold;
-	text-transform: uppercase;
-}
-
-#welcome {
-	margin-top: 30rem;
-	width: 15vw;
-	margin-left: 10%;
-}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -34,6 +11,55 @@ h3 {
 }
 .wrapper::-webkit-scrollbar {
 	display: none;
+}
+}
+section h2 {
+	font-size: 172px;
+	color: lightblue;
+	text-transform: uppercase;
+}
+#m, #a, #r, #z {
+	font-size: 172px;
+	color: lightblue;
+	text-transform: uppercase;
+}
+#welcome, #menu, #drinks, #events {
+	margin-top: 20rem;
+	width: 25vw;
+}
+.info {
+	margin-left: 15%;
+}
+#drinks {
+	margin-left: 32%;
+}
+#drinks ul {
+	list-style: none;
+}
+#drinks b {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+#drink-list {
+	display: none;
+}
+#menu {
+	margin-top: 20rem;
+	margin-left: 45%;	
+}
+#menu p {
+	margin-bottom: 25px;
+}
+#menu a {
+	padding: 10px 20px;
+	border: solid 3px #DABC8F;
+	text-transform: uppercase;
+	color: #DABC8F;
+	margin-left: 40%;
+}
+#events {
+	margin-bottom: 15%;
+	margin-left: 65%;
 }
 
 
@@ -66,7 +92,6 @@ footer {
 	width: 100%;
 
 	left: 12%;
-
 	display: flex;
 	justify-content: flex-start;
 }
@@ -99,13 +124,13 @@ h1 img {
 	left: 3%;
 	
 	height: 150px;
-
 }
 
 h3 {
 	color: #DABC8F;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	font-weight: 800;
+	letter-spacing: 2px;
 }
 
 h3, nav a {
@@ -287,15 +312,12 @@ h1, nav li {
 	padding-right: 10px;
 }
 
-
-
 #landing {
 	/*background-image: url('../img/01-m.png');*/
 	background-repeat: no-repeat;
 	background-position: top 10% right 25%, left top;
 	background-size: auto, 70%;
 	
-
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -303,22 +325,15 @@ h1, nav li {
 	padding-right: 5%;
 }
 
-
-
 .section-info {
 	width: 320px;
 	height: 30%;
 	padding: 10px 20px;
 	margin-top: 40px;
 	
-
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
-	
-
 }
 
 @media screen and (max-width: 480px) {
@@ -337,18 +352,15 @@ h1, nav li {
 
 	.sm-nav {
 		display: block;
-
 	}
 
 	.sm-nav li {
 		display: inline-flex;
 		padding-right: 20px;
-		
 	}
 
 	.left-bg {
 		width: 100vw;
-
 		position: absolute;
 		top: -45%;
 		left: 0%;
@@ -364,23 +376,16 @@ h1, nav li {
 
 	h1 {
 		height: 166px;
-		height: 162px;
-
-
 		position: relative;
 		top: 0%;
 		left: -10%;
-
-
 	}
 
 	h1 > img {
 		position: relative;
 		top: 10%;
 		left: 0%;
-		
 		height: 100px;
-
 	}
 
 	section {
@@ -390,25 +395,16 @@ h1, nav li {
 
 	section:first-of-type {
 		margin-left: 0;
-
-
 	}
 
 	#landing {
 		background-position: top 20% right 5%, bottom 15% center;
-		
-
-
 		margin-top: 10vh;
-	
 	}
-
 
 	.section-info {
 		height: 200px;
-
 	}
-
 
 }
 }
