@@ -233,7 +233,7 @@ a {
 .lrg-nav li {
 	list-style: none;
 	display: list-item;
-	padding-right: 50px;
+	padding-right: 10%;
 }
 
 .lrg-nav li:first-of-type {
@@ -261,9 +261,9 @@ a {
 	height: 110px;
 	width: 111px;
 
-	position: relative;
-	top: -150px;
-	left: 180px;
+	position: absolute;
+	top: 0%;
+	left: 95%;
 
 
 	background-repeat: no-repeat;
@@ -281,9 +281,9 @@ a {
 	height: 166px;
 	width: 166px;
 
-	position: relative;
-	top: -350px;
-	left: 300px;
+	position: absolute;
+	top: -10%;
+	left: 160%;
 
 
 	background-repeat: no-repeat;
@@ -301,9 +301,9 @@ a {
 	height: 116px;
 	width: 117px;
 
-	position: relative;
-	top: -450px;
-	left: 440px;
+	position: absolute;
+	top: -20%;
+	left: 250%;
 
 
 	background-repeat: no-repeat;
@@ -401,6 +401,26 @@ h1, nav li {
 	justify-content: center;
 }
 
+
+
+@media screen and (min-width:480px) and (max-width: 900px) {
+	.wrapper {
+		width: 85vw;
+
+	}
+
+	.top-nav {
+		height: 10vh;
+		width: 100vw;
+
+		top: 0;
+		left: -5%;
+
+	}
+
+}
+
+
 @media screen and (max-width: 480px) {
 	.wrapper {
 		display: block;
@@ -411,6 +431,19 @@ h1, nav li {
 		width: 100vw;
 		height: 100vh;
 	}
+	h1 {
+	
+		position: relative;
+		top: 10%;
+		left: 6%!important;
+	}
+
+	h1 img {
+		height
+	}
+
+
+
 	.lrg-nav {
 		display: none;
 	}
