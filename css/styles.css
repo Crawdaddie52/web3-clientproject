@@ -25,7 +25,7 @@ section h2 {
 	text-transform: uppercase;
 }
 #menu {
-	margin-top: 20rem;
+	margin-top: 10rem;
 	width: 100vw;
 }
 
@@ -109,7 +109,9 @@ section h2 {
 .drinks-list > div {
 	width: 50%;
 }
-
+.drinks-list ul{
+	list-style-type: none;
+}
 #drinks b {
 	text-transform: uppercase;
 	font-size: 24px;
@@ -210,7 +212,6 @@ footer {
 
 section {
 	margin-top: 20vh;
-	height: 90vh;
 	z-index: 1;
 }
 
@@ -434,6 +435,22 @@ h1, nav li {
 
 }
 
+@media screen and (max-width: 550px) {
+	.lrg-nav {
+		display: none;
+	}
+	.sm-nav {
+		display: block;
+		margin-top: 85px;
+	}
+	.sm-nav li {
+		display: inline-flex;
+		padding-right: 30px;
+	}
+	.image-bg {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 480px) {
 	.wrapper {
@@ -447,10 +464,6 @@ h1, nav li {
 
 	.lrg-nav {
 		display: none;
-	}
-
-	.sm-nav {
-		display: block;
 	}
 
 	.sm-nav li {
@@ -497,14 +510,37 @@ h1, nav li {
 		margin-left: 0;
 	}
 
-	#landing {
-		background-position: top 20% right 5%, bottom 15% center;
-		margin-top: 10vh;
+	#welcome {
+		margin-top: 300px;
 	}
-
-	.section-info {
-		height: 200px;
+	#drinks {
+		margin-top: -200px;
+		width: 100%;
 	}
-
+	#drinks-body {
+		margin-right: 100px;
+		width: 90%;
+	}
+	#list-1, #list-2 {
+		width: 30%;
+	}
+	#list-1 {
+		margin-left: 30px;
+	}
+	#list-2 {
+		margin-right: 70px;
+	}
+	#menu {
+		margin-top: 300px;
+		width: 85%;
+	}
+	#menu a {
+		display: block;
+		padding: 10px;
+		width: 105px;
+	}
+	#events {
+		margin-top: -100px;
+	}
 }
 }
