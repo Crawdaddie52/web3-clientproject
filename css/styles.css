@@ -11,7 +11,7 @@ html * {
 
 }
 .wrapper::-webkit-scrollbar {
-	display: none;
+	display: none; 
 }
 }
 section h2 {
@@ -24,43 +24,47 @@ section h2 {
 	color: lightblue;
 	text-transform: uppercase;
 }
-#menu {
-	margin-top: 10rem;
-	width: 100vw;
-}
+
 
 #welcome .info {
 	float: left;
 }
 
 #welcome {
-	margin-top: 20%;
+	margin-top: 15%;
+
+	position: relative;
+
+	display: flex;
+	align-items: flex-end;
 }
 
 .info {
-	margin-left: 15%;
+	/*margin-left: 15%;*/
+	background-color: #fff;
 	width: 50%;
+	padding: 25px;
+}
 
-	float: right;
+#welcome .info {
+	margin-top: 35%;
+	margin-bottom: 15%;
 }
 
 
 .image-bg {
-	width: 70%;
-	height: 600px;
+	width: 100%;
+	height: 800px;
 
 	background-image: url('https://get.taphunter.com/wp-content/uploads/2016/08/bar-11.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	
 	position: absolute;
-	top: -100px;
-
-	margin: 0 auto;
+	top: 10%;
+	left: 15%;
 
 	z-index: -10;
-
-	
 }
 
 #drinks {
@@ -79,15 +83,10 @@ section h2 {
 	background-repeat: no-repeat;
 	
 	position: absolute;
-
 	right: -100%;
-	
 	top: 0%;
 
-
 	z-index: -10;
-
-	
 }
 
 #drinks h2 {
@@ -97,6 +96,7 @@ section h2 {
 
 #drinks .info {
 	margin-bottom: 25px;
+	float: right;
 }
 
 .drinks-list {
@@ -117,17 +117,29 @@ section h2 {
 	font-size: 24px;
 }
 #menu {
-	margin-top: 20rem;
-	margin-left: 0%;	
+/*	margin-top: 20rem;
+*/	margin-left: 0%;	
+	width: 100vw;
 	/*margin-left: 45%;	*/
 	position: relative;
 
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
 
 }
+
+#menu .info {
+	margin-bottom: 10%;
+	width: 30%;
+}
+
+
 #menu p {
 	margin-bottom: 25px;
 }
-#menu a {
+#menu a, #events a {
 	padding: 10px 20px;
 	border: solid 3px #DABC8F;
 	text-transform: uppercase;
@@ -137,7 +149,7 @@ section h2 {
 
 .menu-bg {
 	width: 70%;
-	height: 1000px;
+	height: 700px;
 
 	background-image: url('https://get.taphunter.com/wp-content/uploads/2016/08/bar-11.jpg');
 	background-size: 100%;
@@ -146,9 +158,7 @@ section h2 {
 	position: absolute;
 	top: 0%;
 	left: 0%;
-	background-position: left center;
-
-
+	
 	z-index: -10;
 }
 
@@ -160,8 +170,12 @@ section h2 {
 	position: relative;
 
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-start;
+
+}
+
+#events .info {
+	margin-right: 0%;
+	height: 400px;
 }
 
 .events-container {
@@ -172,17 +186,16 @@ section h2 {
 	margin-right: 5%;
 
 	display: flex;
+	align-self: flex-end;
 }
 
 .event-date {
 	width: 33%;
-
-	border-right: 1px solid black;
 }
 
 .events-bg {
-	width: 90%;
-	height: 600px;
+	width: 70%;
+	height: 1000px;
 
 
 	background-image: url('https://get.taphunter.com/wp-content/uploads/2016/08/bar-11.jpg');
@@ -190,8 +203,8 @@ section h2 {
 	background-size: contain;
 
 	position: absolute;
-	top: 10%;
-	left: 25%;
+	top: 0%;
+	left: 10%;
 
 
 	z-index: -10;
@@ -207,12 +220,13 @@ footer {
 
 	left: 12%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
 section {
-	margin-top: 20vh;
+	/*margin-top: 20vh;*/
 	z-index: 1;
+	height: 100vh;
 }
 
 
@@ -258,7 +272,7 @@ a {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 0;
+	z-index: 10;
 	display: flex;
 	justify-content: space-between;
 
@@ -447,14 +461,12 @@ h1, nav li {
 		display: inline-flex;
 		padding-right: 30px;
 	}
-	.image-bg {
-		display: none;
-	}
+
 }
 
 @media screen and (max-width: 480px) {
 	.wrapper {
-		width: 100vw;
+		width: 95vw;
 		overflow-x: hidden;
 	}
 	section {
@@ -470,6 +482,13 @@ h1, nav li {
 		display: inline-flex;
 		padding-right: 20px;
 	}
+
+	.image-bg {
+		margin-top: 50%;
+	}
+
+
+
 
 	.left-bg {
 		width: 100vw;
@@ -510,37 +529,125 @@ h1, nav li {
 		margin-left: 0;
 	}
 
-	#welcome {
-		margin-top: 300px;
+	.info {
+		width: 80%;
+
 	}
+
+	.image-bg {
+		width: 100%;
+		height: 700px;
+
+		background-image: url('https://get.taphunter.com/wp-content/uploads/2016/08/bar-11.jpg');
+
+
+		top: 0%;
+		left: 0%;
+	}	
+
+	#welcome {
+		margin-top: 0px;
+	}
+
+	#welcome .info {
+		margin-top: -100px;
+		margin-bottom: 250px;
+	}
+
 	#drinks {
 		margin-top: -200px;
 		width: 100%;
+		margin-left; 0;
 	}
+
+	.drinks-bg {
+	/*	width: 70%;
+		height: 700px;
+
+		background-image: url('https://get.taphunter.com/wp-content/uploads/2016/08/bar-11.jpg');
+		background-size: 100%;
+		position: absolute;
+		bottom: 80%;
+		right: 0;*/
+		display: none;
+	}
+
 	#drinks-body {
 		margin-right: 100px;
 		width: 90%;
 	}
-	#list-1, #list-2 {
-		width: 30%;
+
+	.drinks-list {
+		display: flex;
+		flex-direction: column;
 	}
-	#list-1 {
+
+	#list-1, #list-2 {
+		width: 80%;
+	}
+/*	#list-1 {
 		margin-left: 30px;
 	}
 	#list-2 {
 		margin-right: 70px;
-	}
+	}*/
 	#menu {
 		margin-top: 300px;
 		width: 85%;
 	}
-	#menu a {
+
+	#menu .info {
+		margin-bottom: 0;
+		width: 80%;
+	}
+
+	#menu a, #events a {
 		display: block;
 		padding: 10px;
 		width: 105px;
+		float: right;
 	}
+
+	.menu-bg {
+		width: 100%;
+		height: 500px;
+		
+		position: absolute;
+		background-position: top center;
+		top: 0%;
+		left: 10%;
+		
+		z-index: -10;
+	}
+
 	#events {
 		margin-top: -100px;
+
+		display: flex;
+		flex-direction: column-reverse;
+		margin: 0 auto;
 	}
+
+	.events-container {
+		width: 80%;
+		margin-top: 0;
+	}
+
+	.col-1-4:first-of-type {
+		padding-left: 0;
+	}
+
+	.col-1-4 {
+		width: 30%;
+		margin-right: 0;
+	}
+
+
+
+
+
+
+
+
 }
 }
