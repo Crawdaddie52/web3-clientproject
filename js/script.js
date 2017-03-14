@@ -1,15 +1,18 @@
 $(document).ready(function(){
-
-	$(function() {
-
-	   $("body").mousewheel(function(event, delta) {
-	   		if($(window).width() < 480){ 
-
-		      this.scrollLeft -= (delta * 30);
-		    
-		      event.preventDefault();
-	      }
-	   });
-
-	});
+// Scroll to specific values
+// scrollTo is the same
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 });
