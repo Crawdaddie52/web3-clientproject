@@ -149,6 +149,7 @@ nav a {
 }
 a {
 	color: black;
+	z-index: 10;
 }
 ul a:hover {
 	border-bottom: 1px solid #000;
@@ -165,6 +166,11 @@ ul a:hover {
 .button:hover {
 	background-color: #DCBF94;
 	color: #fff;
+}
+.footer-hover:hover {
+	color: #DCBF94;
+	transform: scale(3);
+	transition: 1.5s;
 }
 /*--------------------------------------------------------------
 6.0 - MAIN STYLES
@@ -195,11 +201,13 @@ section:nth-of-type(2) h2 {
 }
 section:nth-of-type(3) {
 	justify-content: flex-end;
+	z-index: 10;
 }
 section:nth-of-type(4) {
 	display: flex;
-	padding-top: 175px;
+	padding-top: 150px;
 	padding-bottom: 200px;
+	z-index: 10;
 }
 .info-card {
 	min-width: 400px;
@@ -256,7 +264,10 @@ footer {
 	padding-bottom: 50px;
 }
 .connect a {
-	margin-right: 25px;
+	margin-right: 65px;
+}
+.connect div {
+	margin-bottom: 20px;
 }
 /*--------------------------------------------------------------
 7.0 - COLORS
